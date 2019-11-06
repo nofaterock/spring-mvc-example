@@ -1,0 +1,19 @@
+spring:
+    application:
+        name: mvc-web-mustache
+    devtools:
+        livereload:
+            enabled: true
+    mustache:
+        cache: false
+        suffix: .mustache
+server:
+    port: 8082
+    servlet:
+        context-path: /
+logging:
+    pattern:
+        console: "%d{HH:mm:ss.SSS} %-5level %20.20t %50.50C{36}:%4.4L - %m%n"
+    level:
+        root: info
+        com.knet: debug

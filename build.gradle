@@ -1,0 +1,50 @@
+plugins {
+	id 'org.springframework.boot' version '2.1.4.RELEASE'
+}
+
+apply plugin: "idea"
+
+group = 'com.knet.template.mvc'
+version = '0.0.1-SNAPSHOT'
+
+idea {
+	module {
+		excludeDirs = [file(".idea"), file(".gradle"), file(".file")]
+	}
+}
+
+subprojects {
+	apply plugin: 'java'
+	apply plugin: 'idea'
+	apply plugin: 'org.springframework.boot'
+	apply plugin: 'io.spring.dependency-management'
+
+	sourceCompatibility = '1.8'
+
+	configurations {
+		compileOnly {
+			extendsFrom annotationProcessor
+		}
+	}
+
+	repositories {
+		maven {
+			url 'http://dev.knetbiz.com:10001/repository/maven-public/'
+			credentials {
+				username "${nexusUsername}"
+				password "${nexusPassword}"
+			}
+		}
+	}
+
+	idea {
+		module {
+			outputDir = file("${buildDir}/classes/main")
+			testOutputDir = file("${buildDir}/classes/test")
+		}
+	}
+
+	bootJar {
+		enabled = false
+	}
+}

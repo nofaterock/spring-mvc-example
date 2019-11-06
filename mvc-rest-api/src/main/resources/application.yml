@@ -1,0 +1,13 @@
+spring:
+    application:
+        name: mvc-rest-api
+server:
+    port: 8080
+    servlet:
+        context-path: /
+logging:
+    pattern:
+        console: "%d{HH:mm:ss.SSS} %-5level %20.20t %50.50C{36}:%4.4L - %m%n"
+    level:
+        root: info
+        com.knet: debug

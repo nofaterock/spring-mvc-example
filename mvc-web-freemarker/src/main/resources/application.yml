@@ -1,0 +1,19 @@
+spring:
+    application:
+        name: mvc-web-thymeleaf
+    devtools:
+        livereload:
+            enabled: true
+    freemarker:
+        cache: false
+        suffix: .ftl
+server:
+    port: 8081
+    servlet:
+        context-path: /
+logging:
+    pattern:
+        console: "%d{HH:mm:ss.SSS} %-5level %20.20t %50.50C{36}:%4.4L - %m%n"
+    level:
+        root: info
+        com.knet: debug
