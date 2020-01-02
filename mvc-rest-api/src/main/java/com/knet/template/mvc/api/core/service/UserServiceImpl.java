@@ -18,6 +18,7 @@ public class UserServiceImpl implements UserService {
 			add(new User("park", "박지성"));
 			add(new User("lee", "이영표"));
 			add(new User("son", "손흥민"));
+			add(new User("lsh", "이승환"));
 		}
 	};
 

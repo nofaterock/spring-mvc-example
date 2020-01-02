@@ -28,13 +28,14 @@ subprojects {
 	}
 
 	repositories {
-		maven {
-			url 'http://dev.knetbiz.com:10001/repository/maven-public/'
-			credentials {
-				username "${nexusUsername}"
-				password "${nexusPassword}"
-			}
-		}
+//		maven {
+//			url 'http://dev.knetbiz.com:10001/repository/maven-public/'
+//			credentials {
+//				username "${nexusUsername}"
+//				password "${nexusPassword}"
+//			}
+//		}
+		mavenCentral()
 	}
 
 	idea {
