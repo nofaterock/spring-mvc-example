@@ -7,9 +7,9 @@
 <body>
 	<h1>Users</h1>
 	<hr/>
-	<#list users as item>
-	<h4>${item.userId}</h4>
-	<h5>${item.name}</h5>
-	</#list>
+    <#list users as item>
+		<h4>${item.userId}</h4>
+		<h5>${item.name}</h5>
+    </#list>
 </body>
 </html>
