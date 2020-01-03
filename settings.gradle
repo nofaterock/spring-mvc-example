@@ -1,9 +1,4 @@
-pluginManagement {
-	repositories {
-		gradlePluginPortal()
-	}
-}
-rootProject.name = 'spring-mvc'
+rootProject.name = 'spring-mvc-example'
 
 include 'mvc-rest-api'
 include 'mvc-web-freemarker'

@@ -10,4 +10,4 @@ logging:
         console: "%d{HH:mm:ss.SSS} %-5level %20.20t %50.50C{36}:%4.4L - %m%n"
     level:
         root: info
-        com.knet: debug
+        com.nofaterock: debug
